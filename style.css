@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  background: navy;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+}
+#menu-btn{
+ color: #fff; 
+  font-size: 45px;
+  font-weight: 600;
+}
+.navbar .sticky{
+  padding: 15px 0;
+  background: greenyellow;
+}
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo span{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .logo label{
+  color: #080808;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+  color: #080808;
+}
+.home .home-img{
+  display: flex;
+  background-size: 300px 500px;
+  background-attachment: fixed;
+  height: 100vh;
+  background: lightblue;
+  min-height: 500px;
+}
+.home .home-content .text-1{
+  font-size: 27px;
+  color: olive;
+}
+.home .home-content .text-2{
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -6px;
+  color: olive;
+}
+.home .home-content .text-3{
+  font-size: 40px;
+  margin: 5px 0;
+  color: olive;
+}
+.home .home-content .text-3 span{
+  color: crimson;
+  font-weight: 500;
+}
+.home .home-content .text-3 label{
+  color: crimson;
+  font-weight: 500;
+}
+.section{
+  padding: 100px 0;
+}
+.about, .services, .contact{
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.contact .contact-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.about .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+.about .title::after{
+  content: "who i am";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: navy;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.about .about-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .about-content .left{
+  width: 45%;
+}
+.about .about-content .left img{
+  height:600px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-left: 70%;
+}
+.about.about-content .right text{
+width: 45%
+}
+.about .about-content .right .text{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.services .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.services .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+.services .title::after{
+  content: "what i provide";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: navy;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.services .about-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.services .about-content .right .text{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.services{
+  color: #111;
+  background: lightblue;
+}
+.services .title::before{
+  background: #111;
+}
+.services .title::after{
+  background: lightblue;
+  content: "what i provide";
+}
+.services .serv-content .card{
+  width: calc(33% -20px);
+  background: olive;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3ease;
+}
+.services .serv-content .card:hover{
+  background: crimson;
+}
+.services .serv-content .card .box{
+  transition: all 0.3ease;
+}
+.services .serv-content .card::hover .box{
+  transform: scale(1.05);
+}
+.services .serv-content .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+  display: inline-block;
+}
+.contact .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.contact .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+.contact .title::after{
+  content: "get in touch";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: navy;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.contact .about-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .about-content .right .text{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact{
+  color: #111;
+  background: #fff;
+}
+.contact .title::before{
+  background: #111;
+}
+.contact .title::after{
+  background: #fff
+  content: "what i provide";
+}
+.contact .contact-content{
+  width: cal(50% -30px);
+}
+.contact .contact-content .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px; 
+}
+.contact .contact-content .left p{
+  text-align: justify;
+}
+.contact .contact-content .row{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info{
+  margin-left: 30px;
+}
+.contact .contact-content .info .head{
+  font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+  color: #333;
+}
+.contact .right form .fields{
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .right form .textarea{
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .name{
+  margin-right: 10px;
+}
+.contact.right form .email{
+  margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+  height: 100%;
+  width: 30%;
+  border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+  }
+.contact .right form .textarea textarea{
+padding-top: 10px;
+resize: none;
+}
+.contact .right form .button{
+  height: 47px;
+  width: 170px;
+}
+.contact .right form .button button{
+  width: 100%;
+  height: 100%;
+  border: 2px solid navy;
+  background: navy;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+color:navy;
+  background: none;
+}
+
+
+
+
+
+
+@media (max-width: 1300px) {
+.home .max-width{
+  margin-left: 0px;
+}
+@media (max-width: 1104px) {
+  .home .max-width{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 991px){
+  .home .max-width{
+    padding: 0 50px;
+  }
+}
